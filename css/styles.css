@@ -82,6 +82,7 @@ header button {
 
 hr {
     height: 3px;
+    margin: 3px 3px;
     background-color: black;
     border: none;
 }
@@ -103,6 +104,12 @@ section h2 {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 10px 5px;
+    position: fixed;
+    bottom: 0;
     background-color: #2f6690;
+    height: 30px;
     width: 100%;
 }
