@@ -34,21 +34,53 @@ body {
     text-decoration: underline;
 }
 
+/* ----------------- Shop CSS ----------------- */
+
 .shop-items-container {
     display: grid;
-    background-color: crimson;
-    gap: 5%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    background-color: rgb(175, 177, 180);
+    justify-content: center;
+    /* gap: 5%; */
+    align-content: space-around;
+    grid-template-columns: repeat(auto-fit, 300px);
 }
 
 .shop-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     background-color: #3A7CA5;
-    width: 300px;
+    width: 250px;
     margin: 10px;
+    padding: 10px;
     border: solid;
+    font-size: large;
+    font-weight: bolder;
 }
 
+.shop-item img {
+    width: 200px;
+    height: 250px;
+}
+
+.shop-item p {
+    padding: 0%;
+    margin: 0%;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);   
+}
+
+.shop-item button {
+    width: 70px;
+    border: 3px solid #000;
+    font-weight: bolder;
+    color: rgba(45, 45, 47, 0.886);
+    border-radius: 5px;
+    background: rgba(255, 217, 0, 0.8);
+}
+
+/* ----------------- Nav Bar ----------------- */
 header nav ul {
     list-style: none;
 }
