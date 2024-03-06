@@ -11,11 +11,6 @@
     width: 75px;
 }
 
-.footer-icono {
-    height: 20px;
-    width: 20px;
-}
-
 .treasure-1 {
     height: 200px;
     width: 200px;
@@ -135,6 +130,8 @@ section h2 {
     margin: 0px;
 }
 
+
+/* ----------------- Footer ----------------- */
 footer {
     display: flex;
     align-items: center;
@@ -144,4 +141,34 @@ footer {
     background-color: #2f6690;
     height: 30px;
     width: 100%;
+}
+
+.footer-icono {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* ----------------- Media queries tablet ----------------- */
+@media only screen and (max-width: 991px) {
+    /* ----------------- Footer ----------------- */
+    footer {
+        height: 45px;
+    }
+
+    .footer-icono {
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+/* ----------------- Media queries smartphone ----------------- */
+@media only screen and (max-width: 575px) {
+    /* ----------------- Footer ----------------- */
+    .footer-icono {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
