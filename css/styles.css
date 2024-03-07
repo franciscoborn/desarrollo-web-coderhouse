@@ -1,4 +1,4 @@
-/* color palet 2F6690 3A7CA5 D9DCD6 16425B 81C3D7 */
+/* Color Palet 2F6690 3A7CA5 D9DCD6 16425B 81C3D7 */
 /* Reset */
 * {
     padding: 0%;
@@ -21,13 +21,29 @@ textarea {
     width: 90%;
 }
 
+/* ----------------- Body ----------------- */
 body {
     background-color: #d9dcd6;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .page-title {
-    text-decoration: underline;
+    text-align: center;
+    font-weight: bolder;
+    font-size: calc(2em + 2vw);
 }
+
+#main-page-title {
+    color: #81c3d7;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
 
 /* ----------------- Shop CSS ----------------- */
 
@@ -35,7 +51,6 @@ body {
     display: grid;
     background-color: rgb(175, 177, 180);
     justify-content: center;
-    /* gap: 5%; */
     align-content: space-around;
     grid-template-columns: repeat(auto-fit, 300px);
 }
