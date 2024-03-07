@@ -1,19 +1,14 @@
 /* Color Palet 2F6690 3A7CA5 D9DCD6 16425B 81C3D7 */
-/* Reset */
+/* ----------------- Reset ----------------- */
 * {
     padding: 0%;
     margin: 0%;
 }
 
-/* Imagenes */
+/* ----------------- Images ----------------- */
 .img-mini-mage {
-    height: 75px;
-    width: 75px;
-}
-
-.treasure-1 {
-    height: 200px;
-    width: 200px;
+    height: 90px;
+    width: 90px;
 }
 
 textarea {
@@ -44,6 +39,46 @@ body {
         2px 2px 0 #000;
 }
 
+/* ----------------- Carousel ----------------- */
+#carousel-main {
+    height: 100%;
+    margin-top: 35px;
+    margin-bottom: 150px;
+}
+
+.carousel-inner {
+    display: flex;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.wheel-div {
+    background-color: #021f5427;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wheel-div div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15%;
+    max-width: 70%;
+}
+
+.wheel-div img {
+    align-self: center;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    width: 50px;
+    height: auto;
+}
 
 /* ----------------- Shop CSS ----------------- */
 
@@ -112,16 +147,6 @@ header button {
     font-weight: 800;
 }
 
-.WheelDiv {
-    background-color: #021f5427;
-    width: 100%;
-}
-
-.arrow {
-    width: 50px;
-    height: auto;
-}
-
 hr {
     height: 3px;
     margin: 3px 3px;
@@ -166,6 +191,12 @@ footer {
 
 /* ----------------- Media queries tablet ----------------- */
 @media only screen and (max-width: 991px) {
+    /* ----------------- Carousel ----------------- */
+    #carousel-main {
+        margin-top: 35px;
+        margin-bottom: 75px;
+    }
+
     /* ----------------- Footer ----------------- */
     footer {
         height: 45px;
@@ -177,13 +208,36 @@ footer {
         margin-right: 10px;
         margin-left: 10px;
     }
+
+    /* ----------------- Images ----------------- */
+    .img-mini-mage {
+        height: 75px;
+        width: 75px;
+    }
+
+    .wheel-div img {
+        width: 350px;
+        height: 350px;
+    }
 }
 
 /* ----------------- Media queries smartphone ----------------- */
 @media only screen and (max-width: 575px) {
+    /* ----------------- Carousel ----------------- */
+    #carousel-main {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
     /* ----------------- Footer ----------------- */
     .footer-icono {
         margin-right: 20px;
         margin-left: 20px;
+    }
+
+    /* ----------------- Images ----------------- */
+    .wheel-div img {
+        width: 200px;
+        height: 200px;
     }
 }
