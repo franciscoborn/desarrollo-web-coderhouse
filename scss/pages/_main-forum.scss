@@ -1,0 +1,16 @@
+.forum-topic {
+    padding: 10px;
+
+    h2 {
+        display: inline;
+    }
+
+    button {
+        align-self: end;
+    }
+
+    .forum-message {
+        background-color: #d9e5ee;
+        padding-left: 5px;
+    }
+}

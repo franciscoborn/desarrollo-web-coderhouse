@@ -1,0 +1,15 @@
+/* Color Palet 2F6690 3A7CA5 D9DCD6 16425B 81C3D7 */
+@import "utilities/_reset.scss";
+@import "utilities/_globals";
+
+@import "components/_header.scss";
+@import "components/_body.scss";
+
+@import "pages/main-index";
+@import "pages/main-shop";
+@import "pages/main-forum";
+@import "pages/main-support";
+
+@import "components/_footer.scss";
+
+@import "utilities/media-queries";

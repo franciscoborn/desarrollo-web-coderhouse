@@ -1,262 +1,201 @@
 /* Color Palet 2F6690 3A7CA5 D9DCD6 16425B 81C3D7 */
 /* ----------------- Reset ----------------- */
 * {
-    padding: 0%;
-    margin: 0%;
-}
-
-/* ----------------- Images ----------------- */
-.img-mini-mage {
-    height: 90px;
-    width: 90px;
-}
-
-textarea {
-    height: 200px;
-    width: 90%;
-}
-
-/* ----------------- Body ----------------- */
-body {
-    background-color: #d9dcd6;
-    display: flex;
-    flex-direction: column;
-    background-image: url('../img/background-treasure.png');
-    background-size: cover;
-    height: 100vh;
-}
-
-.page-title {
-    text-align: center;
-    font-weight: bolder;
-    font-size: calc(2em + 2vw);
-    color: #81c3d7;
-    text-shadow: 
-        -2px -2px 0 #ffffff,  
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000;
-}
-
-/* ----------------- Carousel ----------------- */
-#carousel-main {
-    height: 100%;
-    margin-top: 35px;
-    margin-bottom: 150px;
-}
-
-.carousel-inner {
-    display: flex;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-}
-
-.wheel-div {
-    background-color: #b3b9c5;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.wheel-div div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 15%;
-    max-width: 70%;
-}
-
-.wheel-div img {
-    align-self: center;
-    width: 500px;
-    height: 500px;
-    margin-bottom: 20px;
-}
-
-.arrow {
-    width: 50px;
-    height: auto;
-}
-
-/* ----------------- Shop CSS ----------------- */
-
-.shop-items-container {
-    display: grid;
-    background-color: rgb(175, 177, 180);
-    justify-content: center;
-    align-content: space-around;
-    grid-template-columns: repeat(auto-fit, 300px);
-}
-
-.shop-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3A7CA5;
-    width: 250px;
-    margin: 10px;
-    padding: 10px;
-    border: solid;
-    font-size: large;
-    font-weight: bolder;
-}
-
-.shop-item img {
-    width: 200px;
-    height: 250px;
-}
-
-.shop-item p {
-    padding: 0%;
-    margin: 0%;
-    margin-bottom: 20px;
-    color: rgb(0, 0, 0);   
-}
-
-.shop-item button {
-    width: 70px;
-    border: 3px solid #000;
-    font-weight: bolder;
-    color: rgba(45, 45, 47, 0.886);
-    border-radius: 5px;
-    background: rgba(255, 217, 0, 0.8);
-}
-
-/* ----------------- Forum Page ----------------- */
-.forum-topic {
-    padding: 10px;
-}
-
-.forum-topic h2 {
-    display: inline;
-}
-
-.forum-topic button {
-    align-self: end;
-}
-
-
-.forum-message {
-    background-color: #d9e5ee;
-    padding-left: 5px;
-}
-
-
-/* ----------------- Nav Bar ----------------- */
-header nav ul {
-    list-style: none;
-}
-
-header nav li a {
-    text-decoration: none;
-    color: black;
-    font-weight: 800;
-    background-color: #81C3D7;
-    border: solid;
-}
-
-header button {
-    height: 75px;
-    width: 100px;
-    background-color: #2f6690;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 800;
+  padding: 0;
+  margin: 0;
 }
 
 hr {
-    height: 3px;
-    margin: 3px 3px;
-    background-color: black;
-    border: none;
+  height: 3px;
+  margin: 3px 3px;
+  background-color: black;
+  border: none;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: calc(2em + 2vw);
+  color: #81c3d7;
+  text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 section {
-    background-color: #81c3d7;
-    padding: 20px;
-    margin: 10px;
+  background-color: #81c3d7;
+  padding: 20px;
+  margin: 10px;
 }
-
 section h2 {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.date {
-    padding: 0px;
-    margin: 0px;
+header .img-mini-mage {
+  height: 90px;
+  width: 90px;
+}
+header #btn-play-now {
+  height: 75px;
 }
 
+body {
+  background-color: #d9dcd6;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/background-treasure.png");
+  background-size: cover;
+  height: 100vh;
+}
 
-/* ----------------- Footer ----------------- */
+#main-index #carousel-main {
+  height: 100%;
+  margin-top: 35px;
+  margin-bottom: 150px;
+}
+#main-index #carousel-main .carousel-inner {
+  display: flex;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+#main-index #carousel-main .carousel-inner .wheel-div {
+  background-color: #b3b9c5;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+#main-index #carousel-main .carousel-inner .wheel-div div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 15%;
+  max-width: 70%;
+}
+#main-index #carousel-main .carousel-inner .wheel-div img {
+  align-self: center;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 20px;
+}
+#main-index #carousel-main .arrow {
+  width: 50px;
+  height: auto;
+}
+
+.shop-items-container {
+  display: grid;
+  background-color: rgb(175, 177, 180);
+  justify-content: center;
+  align-content: space-around;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+.shop-items-container .shop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3A7CA5;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: solid;
+  font-size: large;
+  font-weight: bolder;
+}
+.shop-items-container img {
+  width: 200px;
+  height: 250px;
+}
+.shop-items-container p {
+  padding: 0%;
+  margin: 0%;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+.shop-items-container button {
+  width: 70px;
+  border: 3px solid #000;
+  font-weight: bolder;
+  color: rgba(45, 45, 47, 0.886);
+  border-radius: 5px;
+  background: rgba(255, 217, 0, 0.8);
+}
+
+.forum-topic {
+  padding: 10px;
+}
+.forum-topic h2 {
+  display: inline;
+}
+.forum-topic button {
+  align-self: end;
+}
+.forum-topic .forum-message {
+  background-color: #d9e5ee;
+  padding-left: 5px;
+}
+
+textarea {
+  height: 200px;
+  width: 90%;
+}
+
 footer {
-    display: flex;
-    align-items: center;
-    padding: 5px 5px 10px 5px;
-    position: fixed;
-    bottom: 0;
-    background-color: #2f6690;
-    height: 30px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 10px 5px;
+  position: fixed;
+  bottom: 0;
+  background-color: #2f6690;
+  height: 30px;
+  width: 100%;
 }
-
-.footer-icono {
-    height: 20px;
-    width: 20px;
+footer .footer-icono {
+  height: 20px;
+  width: 20px;
 }
-
 
 /* ----------------- Media queries tablet ----------------- */
 @media only screen and (max-width: 991px) {
-    /* ----------------- Carousel ----------------- */
-    #carousel-main {
-        margin-top: 35px;
-        margin-bottom: 75px;
-    }
-
-    /* ----------------- Footer ----------------- */
-    footer {
-        height: 45px;
-    }
-
-    .footer-icono {
-        height: 30px;
-        width: 30px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-
-    /* ----------------- Images ----------------- */
-    .img-mini-mage {
-        height: 75px;
-        width: 75px;
-    }
-
-    .wheel-div img {
-        width: 350px;
-        height: 350px;
-    }
+  /* ----------------- index.html ----------------- */
+  #main-index #carousel-main {
+    margin-top: 35px;
+    margin-bottom: 75px;
+  }
+  #main-index #carousel-main .carousel-inner .wheel-div img {
+    width: 350px;
+    height: 350px;
+  }
+  /* ----------------- Footer ----------------- */
+  footer {
+    height: 45px;
+  }
+  footer .footer-icono {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  /* ----------------- Header ----------------- */
+  header .img-mini-mage {
+    height: 75px;
+    width: 75px;
+  }
 }
-
 /* ----------------- Media queries smartphone ----------------- */
 @media only screen and (max-width: 575px) {
-    /* ----------------- Carousel ----------------- */
-    #carousel-main {
-        margin-top: 20px;
-        margin-bottom: 25px;
-    }
-
-    /* ----------------- Footer ----------------- */
-    .footer-icono {
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    /* ----------------- Images ----------------- */
-    .wheel-div img {
-        width: 200px;
-        height: 200px;
-    }
+  /* ----------------- index.html ----------------- */
+  #main-index #carousel-main {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  #main-index #carousel-main .carousel-inner .wheel-div img {
+    width: 200px;
+    height: 200px;
+  }
+  footer .footer-icono {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

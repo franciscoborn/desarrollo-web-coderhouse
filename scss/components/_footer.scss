@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 10px 5px;
+    position: fixed;
+    bottom: 0;
+    background-color: #2f6690;
+    height: 30px;
+    width: 100%;
+
+    .footer-icono {
+        height: 20px;
+        width: 20px;
+    }
+}
