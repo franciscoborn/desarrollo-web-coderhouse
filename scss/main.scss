@@ -5,11 +5,11 @@
 @import "components/_header.scss";
 @import "components/_body.scss";
 
-@import "pages/main-index";
-@import "pages/main-shop";
-@import "pages/main-forum";
-@import "pages/main-support";
+@import "pages/_main-index";
+@import "pages/_main-shop";
+@import "pages/_main-forum";
+@import "pages/_main-support";
 
 @import "components/_footer.scss";
 
-@import "utilities/media-queries";
+@import "utilities/_media-queries";
