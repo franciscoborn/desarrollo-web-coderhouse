@@ -34,6 +34,10 @@ section h2 {
   margin: 0px;
 }
 
+header {
+  background-color: #333;
+  padding: 10px;
+}
 header .img-mini-mage {
   height: 90px;
   width: 90px;
@@ -152,9 +156,46 @@ body {
   padding-left: 5px;
 }
 
-textarea {
-  height: 200px;
-  width: 90%;
+.main-support h2 {
+  margin-bottom: 20px;
+}
+.main-support .faq-section {
+  margin-bottom: 40px;
+}
+.main-support .faq-section .faq-card {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.main-support .contact-section {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.main-support .contact-section form div {
+  margin-bottom: 10px;
+}
+.main-support .contact-section form div label {
+  display: block;
+  margin-bottom: 5px;
+}
+.main-support .contact-section form div input[type=text], .main-support .contact-section form div input[type=email], .main-support .contact-section form div textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.main-support .contact-section form input[type=submit] {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.main-support .contact-section form input[type=submit]:hover {
+  background-color: #0f2231;
 }
 
 footer {

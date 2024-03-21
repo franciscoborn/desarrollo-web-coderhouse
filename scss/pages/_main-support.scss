@@ -1,4 +1,53 @@
-textarea {
-    height: 200px;
-    width: 90%;
+.main-support {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .faq-section {
+        margin-bottom: 40px;
+
+        .faq-card {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+    }
+    
+
+    .contact-section {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+
+        form {
+            div {
+                margin-bottom: 10px;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                input[type="text"], input[type="email"], textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                }
+            }
+
+            input[type="submit"] {
+                background-color: #333;
+                color: white;
+                border-radius: 5px;
+                padding: 10px 20px;
+
+                &:hover {
+                    background-color: #0f2231;
+                }
+            }
+        }
+    }
 }
