@@ -12,6 +12,10 @@ hr {
   border: none;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 .page-title {
   text-align: center;
   font-weight: bolder;
@@ -85,6 +89,7 @@ body {
   display: grid;
   background-color: rgb(175, 177, 180);
   justify-content: center;
+  justify-items: center;
   align-content: space-around;
   grid-template-columns: repeat(auto-fit, 300px);
 }
