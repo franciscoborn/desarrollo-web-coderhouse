@@ -12,9 +12,15 @@
             margin-bottom: 75px;
 
             .carousel-inner {
+                min-height: 1000px;
+
                 .wheel-div img {
                     @include sizes(350px, 350px);
                 }
+            }
+
+            .arrow {
+                width: 40px;
             }
         }
     }
@@ -24,9 +30,13 @@
         height: 45px;
 
         .footer-icono {
-            @include sizes(20px, 20px);
+            @include sizes(25px, 25px);
             margin-right: 10px;
             margin-left: 10px;
+
+            &:hover {
+                @include sizes(30px, 30px);
+            }
         }
     }
 
@@ -47,9 +57,15 @@
             margin-bottom: 25px;
 
             .carousel-inner {
+                min-height: 900px;
+
                 .wheel-div img {
                     @include sizes(200px, 200px);
                 }
+            }
+
+            .arrow {
+                width: 30px;
             }
         }
     }

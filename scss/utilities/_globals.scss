@@ -9,10 +9,19 @@ main {
     padding-bottom: 50px;
 }
 
+p {
+    text-align: justify;
+}
+
+a {
+    color:#0018cf;
+}
+
 .page-title {
     text-align: center;
     font-weight: bolder;
     font-size: calc(2em + 2vw);
+    margin: 20px;
     color: #81c3d7;
     text-shadow: 
         -2px -2px 0 #ffffff,  
