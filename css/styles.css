@@ -14,6 +14,8 @@ hr {
 
 main {
   padding-bottom: 50px;
+  top: 120px;
+  position: relative;
 }
 
 p {
@@ -47,6 +49,11 @@ section h2 {
 header {
   background-color: #333;
   padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 2;
 }
 header .img-mini-mage {
   height: 90px;
@@ -105,9 +112,11 @@ body {
 #main-index #carousel-main .arrow {
   width: 50px;
   height: auto;
+  position: absolute;
+  top: 400px;
 }
 
-.shop-items-container {
+.main-shop .shop-items-container {
   display: grid;
   background-color: rgb(175, 177, 180);
   justify-content: center;
@@ -115,31 +124,32 @@ body {
   align-content: space-around;
   grid-template-columns: repeat(auto-fit, 300px);
 }
-.shop-items-container .shop-item {
+.main-shop .shop-items-container .shop-item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: #3A7CA5;
   width: 250px;
+  height: 370px;
   margin: 10px;
   padding: 10px;
   border: solid;
   font-size: large;
   font-weight: bolder;
 }
-.shop-items-container .shop-item p {
+.main-shop .shop-items-container .shop-item p {
   padding: 0%;
   margin: 0%;
   margin: 10px;
   color: rgb(0, 0, 0);
 }
-.shop-items-container .shop-item img {
+.main-shop .shop-items-container .shop-item img {
   width: 200px;
   height: 250px;
   border: 3px solid #000;
 }
-.shop-items-container .shop-item .shop-item-button, .shop-items-container .shop-item .shop-item-button-bundle {
+.main-shop .shop-items-container .shop-item .shop-item-button, .main-shop .shop-items-container .shop-item .shop-item-button-bundle {
   height: 35px;
   width: 70px;
   border: 3px solid #000;
@@ -148,15 +158,16 @@ body {
   border-radius: 5px;
   background: rgba(255, 217, 0, 0.8);
 }
-.shop-items-container .shop-item .shop-item-button:hover, .shop-items-container .shop-item .shop-item-button-bundle:hover {
+.main-shop .shop-items-container .shop-item .shop-item-button:hover, .main-shop .shop-items-container .shop-item .shop-item-button-bundle:hover {
   height: 45px;
   width: 90px;
+  margin: -5px 0px;
 }
-.shop-items-container .shop-item .shop-item-button-bundle {
+.main-shop .shop-items-container .shop-item .shop-item-button-bundle {
   width: 120px;
   background: rgb(115, 198, 8);
 }
-.shop-items-container .shop-item .shop-item-button-bundle:hover {
+.main-shop .shop-items-container .shop-item .shop-item-button-bundle:hover {
   height: 45px;
   width: 140px;
 }
@@ -168,7 +179,7 @@ body {
   display: inline;
 }
 .forum-topic button {
-  border-bottom: 0px solid black;
+  border: 0px solid black;
   background-color: #333;
   color: white;
   border-radius: 5px;
@@ -266,6 +277,9 @@ footer .footer-icono:hover {
 
 /* ----------------- Media queries tablet ----------------- */
 @media only screen and (max-width: 991px) {
+  main {
+    top: 100px;
+  }
   /* ----------------- index.html ----------------- */
   #main-index #carousel-main {
     margin-top: 35px;
@@ -280,6 +294,7 @@ footer .footer-icono:hover {
   }
   #main-index #carousel-main .arrow {
     width: 40px;
+    top: 450px;
   }
   /* ----------------- Footer ----------------- */
   footer {
